@@ -22,7 +22,7 @@
               ><span class="logo-black">Studio</span></a
             >
             <ul class="navlink">
-              <li><a href="index.html" class="corp-color upper-link">Студия</a></li>
+              <li><a href="index.html" class="active-page upper-link">Студия</a></li>
               <li><a href="portfolio.html" class="upper-link">Портфолио</a></li>
               <li><a href="#" class="upper-link">Контакты</a></li>
             </ul>
@@ -122,25 +122,30 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="we-do-list">
             <li class="we-do-image">
-              <img
-                src="images/pc-tablet.jpg"
-                width="370"
-                alt="компьютер и планшет"
-              />
-            </li>
+              <div class="wedo-container">
+                <img src="images/pc-tablet.jpg" width="370" alt="компьютер и планшет" />
+                <div class="wedo-overlay"><span>Десктопные приложения</span></div>
+              </div>
+           </li>
             <li class="we-do-image">
-              <img
-                src="images/pc-phone.jpg"
+              <div class="wedo-container">
+                <img src="images/pc-phone.jpg"
                 width="370"
                 alt="компьютер и мобильный телефон"
               />
+              <div class="wedo-overlay"><span>Мобильные приложения</span>
+              </div>
+              
             </li>
             <li class="we-do-image">
-              <img
-                src="images/tablet-colors.jpg"
+              <div class="wedo-container">
+                <img src="images/tablet-colors.jpg"
                 width="370"
                 alt="палитра цветов на экране планшета"
               />
+              <div class="wedo-overlay"><span>Дизайнерские решения</span>
+              </div>
+              
             </li>
           </ul>
         </div>        
@@ -390,5 +395,18 @@
         </div>       
       </div>
     </footer>
+    <!-- MODAL AREA -->
+    <div class="modal is-hidden">
+      <div class="backdrop"></div>
+      <div class="modal-window">
+        <svg width="30px" height="30px" class="modal-close">
+          <use href="images/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- END OF MODAL AREAS -->
+
   </body>
 </html>
