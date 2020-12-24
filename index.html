@@ -392,16 +392,91 @@
             </a>
           </li>
         </ul>
-        </div>       
+        </div>
+        <div class="footer-thrd-container">
+          <span class="social-footer-text">Подпишитесь на рассылку</span>
+          <form action="" class="subscribe-form" name="subscribe-form">
+            <input type="text" class="subscribe" placeholder="E-mail" name="subscribe-mail">
+            <button submit="" class="subscribe-btn"> <span>Подписаться</span> 
+              <svg width="24" height="24">
+              <use href="images/modal.svg#send"></use>
+            </svg> </button>
+          </form>
+        </div>     
       </div>
     </footer>
     <!-- MODAL AREA -->
     <div class="modal is-hidden">
       <div class="backdrop"></div>
       <div class="modal-window">
-        <svg width="30px" height="30px" class="modal-close">
-          <use href="images/sprite.svg#close"></use>
-        </svg>
+        <button class="modal-close">
+           
+                    <svg width="11px" height="11px" class="modal-close-cross">
+                      <use href="images/modal.svg#cross"></use>
+                    </svg>
+
+        </button>
+        <div class="modal-body">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <form action="" class="modal-form" name="contact-form">
+            <div class="data-form">
+
+              <label class="modal-label">
+                <span class="modal-text">Имя</span>
+                <div class="modal-input-area">
+                   <input class="text-input" type="text" name="name">
+                    <svg class="modal-icon">
+                    <use href="images/modal.svg#person"></use>
+                    </svg>
+                </div>
+
+              </label>
+              <label class="modal-label">
+                <span class="modal-text">Телефон</span>
+                <div class="modal-input-area">
+                  <input class="text-input" type="text" name="phone">
+                  <svg class="modal-icon">
+                    <use href="images/modal.svg#phone">
+                    </use>
+                  </svg>
+                </div>
+               
+              </label>
+              <label class="modal-label">
+                <span class="modal-text">Почта</span>
+                <div class="modal-input-area">
+                  <input class="text-input" type="text" name="mail">
+                  <svg class="modal-icon">
+                    <use href="images/modal.svg#email"></use>
+                  </svg>
+
+                </div>
+                
+              </label>
+
+              <label class="modal-label" for="">
+                <span class="modal-text">Комментарий</span>
+                <textarea class="comment-input" name="comment" cols="30" rows="10" placeholder="Введите текст"></textarea> 
+                
+              </label>
+
+            </div>
+            <div class="modal-termsaccept">
+              <label class="terms-label" >
+                
+                <input type="checkbox" class="modal-check" name="terms-accept"> <span class="terms-text">Соглашаюсь с рассылкой и принимаю</span>
+                <a href="#" class="terms-link">Условия договора</a> 
+                <svg class="unchecked-icon">
+                  <use href="images/modal.svg#uncheck"></use>
+                </svg>
+                <svg class="checked-icon">
+                  <use  href="images/modal.svg#check"></use>
+                </svg>
+              </label>
+            </div>            
+            <button type="submit" class="modal-button">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
