@@ -561,9 +561,9 @@ a.active-page {
 }
 
 .is-hidden {
-  /* visibility: hidden;
+  visibility: hidden;
   opacity: 0;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .modal-body {
