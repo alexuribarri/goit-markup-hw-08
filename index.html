@@ -56,8 +56,8 @@
           <h1 class="main-title main-white">
             Эффективные решения для вашего бизнеса
           </h1>
-          <a href="#" class="order-link main-white">Заказать услугу</a>
-        </div>      
+          <button data-modal-open class="order-link main-white hero-button">Заказать услугу</button>
+         </div>      
       </section>
       <!-- section our values -->
       <section>
@@ -397,7 +397,7 @@
           <span class="social-footer-text">Подпишитесь на рассылку</span>
           <form action="" class="subscribe-form" name="subscribe-form">
             <input type="text" class="subscribe" placeholder="E-mail" name="subscribe-mail">
-            <button submit="" class="subscribe-btn"> <span>Подписаться</span> 
+            <button type="submit" class="subscribe-btn"> <span>Подписаться</span> 
               <svg width="24" height="24">
               <use href="images/modal.svg#send"></use>
             </svg> </button>
@@ -406,10 +406,10 @@
       </div>
     </footer>
     <!-- MODAL AREA -->
-    <div class="modal is-hidden">
+    <div class="modal is-hidden" data-modal>
       <div class="backdrop"></div>
       <div class="modal-window">
-        <button class="modal-close">
+        <button data-modal-close class="modal-close">
            
                     <svg width="11px" height="11px" class="modal-close-cross">
                       <use href="images/modal.svg#cross"></use>
@@ -479,9 +479,7 @@
         </div>
       </div>
     </div>
-
-
     <!-- END OF MODAL AREAS -->
-
+    <script src="js/modal.js"></script>
   </body>
 </html>

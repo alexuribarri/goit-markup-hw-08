@@ -187,6 +187,11 @@ a.active-page {
   border-radius: 4px;
   padding: 15px 0;
 }
+
+.hero-button {
+  border: none;
+}
+
 /* END HERO AREA*/
 /* VALUES AREA */
 .values {
@@ -560,10 +565,15 @@ a.active-page {
   fill: var(--corpcolor);
 }
 
+.modal {
+  opacity: 1;
+  transition: opacity var(--sitetransit);
+}
+
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity var(--sitetransit);
 }
 
 .modal-body {
