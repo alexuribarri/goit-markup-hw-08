@@ -1,0 +1,247 @@
+.backdrop {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-window {
+  width: 528px;
+  height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $mainwhite;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-8px, 8px);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $mainwhite;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  outline: none;
+}
+
+.modal-close-cross {
+  & {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-8px, 8px);
+    fill: #000000;
+    transition: fill $sitetransit;
+  }
+
+  .modal-close:hover &,
+  .modal-close:focus & {
+    fill: $corpcolor;
+  }
+}
+
+.modal {
+  opacity: 1;
+  transition: opacity $sitetransit;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $sitetransit;
+}
+
+.modal-body {
+  text-align: center;
+  width: 448px;
+  height: 342px;
+  margin: 40px 40px;
+}
+.data-form {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.modal-label,
+.modal-text,
+.text-input {
+  display: block;
+}
+
+.text-input {
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  padding-left: 42px;
+  transition: border $sitetransit;
+}
+
+.comment-input {
+  & {
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    padding: 12px 12px;
+    resize: none;
+  }
+
+  &::placeholder {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.modal-text {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.data-form .modal-label:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.modal-input-area {
+  position: relative;
+}
+
+.modal-icon {
+  & {
+    fill: #212121;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill $sitetransit;
+  }
+
+  .text-input:focus ~ & {
+    fill: $corpcolor;
+  }
+}
+
+.text-input:focus {
+  border-color: $corpcolor;
+  outline: none;
+}
+
+.modal-termsaccept {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.modal-termsaccept {
+  display: flex;
+  justify-content: center;
+}
+
+.terms-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 425px;
+  height: 24px;
+}
+
+.modal-check {
+  appearance: none;
+}
+
+.unchecked-icon {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  transition: opacity $sitetransit;
+}
+
+.checked-icon {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  transition: opacity $sitetransit;
+}
+
+.modal-check {
+  &:checked ~ .unchecked-icon {
+    opacity: 1;
+  }
+
+  &:not(:checked) ~ .checked-icon {
+    opacity: 0;
+  }
+}
+
+.modal-button {
+  & {
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    background-color: $corpcolor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $mainwhite;
+    transition: background $sitetransit;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}
+
+.terms-link {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+.terms-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-right: 4px;
+  margin-left: 22px;
+}
