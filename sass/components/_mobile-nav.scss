@@ -39,6 +39,11 @@
   }
 }
 
+.menu-button:focus,
+.menu-button:hover {
+  fill: $corpcolor;
+}
+
 //END OF NAV ELEMENTS
 
 //NAV-ICONS
@@ -123,7 +128,7 @@
 }
 
 //TABLET
-@media (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
   .upper-logo-navlinks {
     display: flex;
     justify-content: space-between;
@@ -154,6 +159,9 @@
   .navigation {
     margin-right: 84px;
   }
+  .contact-list:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 }
 
 //DESKTOP
@@ -163,9 +171,12 @@
     align-items: center;
   }
   .contacts .navlink li:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
   }
   .navigation {
     margin-right: 305px;
+  }
+  .contact-list:not(:last-of-type) {
+    margin-bottom: 0;
   }
 }

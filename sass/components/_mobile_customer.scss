@@ -2,6 +2,9 @@
   padding: 60px 0;
 }
 
+.customers .container {
+  padding: 0;
+}
 .customer-icon {
   & {
     fill: #afb1b8;
@@ -15,18 +18,16 @@
 }
 
 .customer-list {
-  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .customer-card {
   & {
     width: #{((($mobile)- (30 * 2))/2)};
-    margin-right: 30px;
+    margin: 15px;
     height: 90px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;
@@ -36,6 +37,7 @@
     align-items: center;
     transition: border-color $sitetransit;
     margin-bottom: 30px;
+    box-sizing: border-box;
   }
 
   &:hover,
@@ -47,15 +49,15 @@
 
 //TABLET
 
-@media (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
   .customer-card {
-    width: #{((($tablet)- (30 * 3))/3)};
+    max-width: #{((($tablet)- (30 * 3))/3)};
   }
 }
 
 //DESKTOP
 
-@media (min-width: $desktop) {
+@media screen and (min-width: $desktop) {
   .customer-list {
     display: flex;
     flex-wrap: nowrap;
