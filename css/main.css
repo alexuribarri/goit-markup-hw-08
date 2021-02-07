@@ -99,6 +99,10 @@ input[type='radio'].visually-hidden {
   border-bottom: 1px solid #ececec;
 }
 
+.header .container {
+  padding: 0 15px;
+}
+
 .upper-contacts {
   color: #757575;
 }
@@ -527,6 +531,10 @@ input[type='radio'].visually-hidden {
   padding-bottom: 94px;
 }
 
+.what-we-do .container {
+  padding: 0 15px;
+}
+
 .we-do-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,6 +582,10 @@ input[type='radio'].visually-hidden {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.team-container .container {
+  padding: 0 15px;
 }
 
 .team-card {
@@ -803,6 +815,10 @@ input[type='radio'].visually-hidden {
 
 .footer-adress {
   color: #ffffff;
+}
+
+.footer .container {
+  padding: 0 15px;
 }
 
 .social-link-footer {
