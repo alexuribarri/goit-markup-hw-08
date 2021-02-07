@@ -13,6 +13,7 @@ body {
   color: $fontcolor;
   font-size: 14px;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 a {
@@ -28,12 +29,47 @@ address {
 }
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.171;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
+@media screen and (min-width: $desktop) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.reduced {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// LOGO STYLES
+.logo {
+  font-family: $logofont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+.corp-color {
+  color: $corpcolor;
+}
+.logo-black {
+  color: $mainblack;
+}
+.main-white {
+  color: $mainwhite;
+}
+// END OF LOGO STYLES
 
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),

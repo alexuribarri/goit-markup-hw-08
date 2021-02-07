@@ -1,0 +1,82 @@
+.value-card {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.values {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.values-list {
+  justify-content: center;
+}
+
+.value-title {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: inherit;
+  text-transform: uppercase;
+  line-height: 1.142;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.value-icon {
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-desc {
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+//TABLET
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .values-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .value-card {
+    width: #{((($tablet)- (30 * 2))/2)};
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .container {
+    padding: 0;
+  }
+}
+
+//DESKTOP
+
+@media screen and (min-width: $desktop) {
+  .values {
+    padding-top: 94px;
+  }
+  .container {
+    padding: 0;
+  }
+
+  .values-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .value-card {
+    width: 270px;
+  }
+  .value-title {
+    text-align: left;
+  }
+}

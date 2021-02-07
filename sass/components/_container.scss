@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: $mobile) {
+  .container {
+    max-width: $mobile;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .container {
+    max-width: $tablet;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    max-width: $desktop;
+    padding: 0 15px;
+  }
+}
+
+// @media (min-width: $mobile) {
+//   .container {
+//     width: $mobile;
+//   }
+// }
+// @media (min-width: $tablet) {
+//   .container {
+//     width: $tablet;
+//   }
+// }
+// @media (min-width: $desktop-reduced) {
+//   .container {
+//     width: auto;
+//   }
+//   .reduced {
+//     width: $desktop-reduced;
+//   }
+// }

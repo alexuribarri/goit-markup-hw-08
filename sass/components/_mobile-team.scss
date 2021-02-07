@@ -1,0 +1,121 @@
+.team-container {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-card {
+  max-width: 450px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $mainwhite;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-photo {
+  width: 100%;
+}
+
+.our-team {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-role {
+  color: #757575;
+}
+
+.social-link-team {
+  & {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color $sitetransit;
+  }
+  &:hover,
+  &:focus {
+    background-color: $corpcolor;
+  }
+}
+
+.social-li-team:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.social-container-team {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  & {
+    fill: #afb1b8;
+    transition: fill $sitetransit;
+  }
+
+  .social-link-team:hover &,
+  .social-link-team:focus & {
+    fill: $mainwhite;
+  }
+}
+
+//TABLET
+@media (min-width: $tablet) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -30px;
+  }
+  .team-card {
+    width: #{((($tablet)- (30 * 2))/2)};
+    margin-right: 30px;
+  }
+
+  .team-photo {
+    width: 354px;
+    display: inline-block;
+  }
+}
+
+//DESkTOP
+
+@media (min-width: $desktop) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-right: -30px;
+  }
+
+  .team-container {
+    background-color: #f5f4fa;
+    padding: 94px 0;
+  }
+
+  .team-photo {
+    width: 270px;
+    display: inline-block;
+  }
+  .team-card {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
