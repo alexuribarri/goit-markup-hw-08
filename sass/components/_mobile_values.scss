@@ -46,7 +46,7 @@
     flex-wrap: wrap;
   }
   .value-card {
-    width: #{((($tablet)- (30 * 2))/2)};
+    max-width: #{((($tablet)- (30 * 2))/2)};
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -69,7 +69,6 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 1200px;
     margin: 0 auto;
     align-items: center;
   }

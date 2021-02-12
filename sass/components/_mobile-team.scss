@@ -88,12 +88,12 @@
     margin-right: -30px;
   }
   .team-card {
-    width: #{((($tablet)- (30 * 2))/2)};
+    max-width: #{((($tablet)- (30 * 2))/2)};
     margin-right: 30px;
   }
 
   .team-photo {
-    width: 354px;
+    // width: 354px;
     display: inline-block;
   }
 }

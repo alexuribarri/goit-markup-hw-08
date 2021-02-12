@@ -51,7 +51,7 @@
 
 @media screen and (min-width: $tablet) {
   .customer-card {
-    max-width: #{((($tablet)- (30 * 3))/3)};
+    width: #{((($tablet)- (30 * 3))/3)};
   }
 }
 
